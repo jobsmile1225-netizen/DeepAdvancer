@@ -652,7 +652,7 @@ def training_stage1(model, train_loader, optimizer_ae, optimizer_disc_batch, opt
 
             total_loss = (
                 1 * recon_loss +
-                1 * class_disc_loss_ae +
+                1 * class_disc_loss_ae -
                 batch_disc_loss_ae +
                 1 * sigmatrix_loss +
                 class_center_loss +
